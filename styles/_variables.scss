@@ -1,0 +1,23 @@
+@import "./fonts.scss";
+
+//Fonts
+$main-font: "source_sans_proregular", Arial, sans-serif;
+$main-font-bold: "source_sans_probold", Arial, sans-serif;
+$main-font-italic: "source_sans_proitalic", Arial, sans-serif;
+$main-font-bold-italic: "source_sans_probold_italic", Arial, sans-serif;
+
+//Colors
+$main-color: #6a2212;
+$light-color: #f8eccc;
+$blue: #002fb6;
+$green: #2a7812;
+$red: #990000;
+
+//Box Shadow
+$box-shadow-1: 0 0 15px rgba(0, 0, 0, 0.1);
+
+//Border radius
+$border-radius-lg: 25px;
+$border-radius-sm: 10px;
+
+$focus: 2px solid $blue;

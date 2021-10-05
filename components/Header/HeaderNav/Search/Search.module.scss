@@ -1,0 +1,24 @@
+.search {
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+  input {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: none;
+    padding: 8px;
+  }
+  button {
+    width: 17px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    cursor: pointer;
+    color: #555;
+  }
+}

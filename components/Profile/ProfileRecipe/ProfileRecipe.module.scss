@@ -1,0 +1,54 @@
+@import "../../../styles/variables";
+.profileRecipe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  &__image {
+    width: 75px;
+    height: 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-radius-sm;
+    margin-right: 30px;
+  }
+  &__title {
+    flex-grow: 2;
+    font-size: 18px;
+    font-family: $main-font;
+    strong {
+      font-family: $main-font-bold;
+      display: block;
+      font-weight: normal;
+    }
+  }
+  &__actions {
+    display: flex;
+    button {
+      background: none;
+      border: none;
+      border-radius: 100%;
+      color: #fff;
+      display: flex;
+      width: 25px;
+      height: 25px;
+
+      align-items: center;
+      justify-content: center;
+      &:first-child {
+        background: $green;
+        padding: 7px;
+      }
+      &:last-child {
+        background: $red;
+        padding: 8px;
+        margin-left: 5px;
+      }
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

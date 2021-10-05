@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+
+  &__logo {
+    max-width: 280px;
+    margin-right: 15px;
+    a {
+      &:focus {
+        outline: $focus;
+        outline-offset: 2px;
+      }
+    }
+  }
+  &__search {
+    flex-grow: 2;
+  }
+  &__nav {
+    font-weight: normal;
+  }
+}

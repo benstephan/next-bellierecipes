@@ -1,0 +1,75 @@
+@import "../../../../styles/variables";
+.profileDropdown {
+  position: relative;
+  z-index: 9;
+  &__button {
+    max-width: 32px;
+  }
+  &__dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-3px);
+    transition: all 0.2s;
+    position: absolute;
+    width: 230px;
+    background: #fff;
+    right: -10px;
+    margin-top: 10px;
+    box-shadow: $box-shadow-1;
+    border-radius: $border-radius-lg;
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+      transition: all 0.2s;
+    }
+    &__user {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      &__info {
+        display: flex;
+        flex-direction: column;
+        small {
+          font-size: 10px;
+        }
+        span {
+          font-family: $main-font-bold;
+          font-size: 18px;
+        }
+      }
+
+      &__pic {
+        min-width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: #ccc;
+        margin-right: 15px;
+      }
+    }
+    &__menu {
+      padding: 15px;
+      nav {
+        display: block;
+        width: 100%;
+        padding-top: 15px;
+        a {
+          display: block;
+          width: 100%;
+          clear: both;
+          font-family: $main-font-bold;
+          padding-bottom: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    &__logout {
+      padding: 10px 15px;
+      border-top: 1px solid #ddd;
+      button {
+        margin: 0;
+      }
+    }
+  }
+}

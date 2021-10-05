@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+.profileNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  a {
+    color: #777;
+    font-family: $main-font-bold;
+    padding: 0 15px;
+    text-decoration: none;
+    &.current {
+      color: #222;
+    }
+  }
+}

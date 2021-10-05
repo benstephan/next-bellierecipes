@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+.recipeActions {
+  border-radius: $border-radius-lg;
+  display: inline-block;
+  box-shadow: $box-shadow-1;
+  padding: 10px 0;
+  position: sticky;
+  top: 15px;
+  button {
+    border: none;
+    background: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    svg {
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import "../../styles/variables";
+.createRecipe {
+  position: relative;
+  padding: 15px 0;
+  &__content {
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow-1;
+    padding: 0;
+    form,
+    fieldset {
+      width: 100%;
+    }
+    input[type="text"],
+    select {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      padding: 10px 5px;
+      font-family: $main-font;
+      color: #666;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $blue;
+      }
+    }
+    &__fields {
+      padding: 25px;
+      &__title {
+        font-size: 36px !important;
+        font-family: $main-font-bold !important;
+      }
+      fieldset {
+        width: 100%;
+        padding: 15px 0;
+        margin-bottom: 5px;
+
+        label {
+          display: block;
+          font-size: 12px;
+          line-height: 1rem;
+          color: red;
+          padding-top: 5px;
+        }
+      }
+      span {
+        padding: 10px 5px 0 5px;
+        display: block;
+        font-size: 14px;
+        font-family: $main-font-bold;
+        color: #888;
+      }
+      &__tiles {
+        label {
+          display: block;
+          font-size: 12px;
+          line-height: 1rem;
+          color: red;
+          padding-top: 5px;
+          margin-top: -20px;
+        }
+      }
+      &__ingredients,
+      &__steps {
+        position: relative;
+        button {
+          position: absolute;
+          bottom: 30px;
+          right: 10px;
+          width: 25px;
+          height: 25px;
+          color: $green;
+          border: none;
+          background: none;
+        }
+      }
+    }
+    &__imageUpload {
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-top-right-radius: $border-radius-lg;
+      border-top-left-radius: $border-radius-lg;
+      padding: 20px;
+      &__border {
+        width: 100%;
+        border: 2px dashed #bbb;
+        text-align: center;
+
+        label {
+          text-align: center;
+          padding: 160px 0;
+          display: block;
+          svg {
+            width: 20px;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            clear: both;
+          }
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+
+      button {
+        border-radius: $border-radius-lg;
+        color: #fff;
+        border: 1px solid transparent;
+        font-size: 16px;
+        font-family: $main-font-bold;
+        padding: 7px 15px;
+      }
+      &__success {
+        background: $green;
+        margin-left: 10px;
+      }
+      &__default {
+        border: 1px solid #ddd !important;
+        background: #fff !important;
+        color: #222 !important;
+      }
+      &__danger {
+        background: $red;
+      }
+      &__right {
+        text-align: right;
+      }
+    }
+  }
+}

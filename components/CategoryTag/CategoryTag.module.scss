@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+.categoryTag {
+  border-radius: $border-radius-lg;
+  background: #fff;
+  display: inline-block;
+  box-shadow: $box-shadow-1;
+  &__wrap {
+    padding: 5px 15px 5px 5px;
+    display: flex;
+    align-items: center;
+    color: #222;
+    text-decoration: none;
+    &:focus {
+      outline: $focus;
+      outline-offset: 1px;
+    }
+    &__image {
+      border-radius: 100%;
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      margin-right: 7px;
+    }
+  }
+}

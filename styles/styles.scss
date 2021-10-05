@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./variables";
+@import "./grid";
+@import "./mixins";
+body {
+  font-family: $main-font;
+  line-height: 1.35rem;
+}
+strong {
+  font-weight: $main-font-bold;
+  font-weight: bold;
+}
