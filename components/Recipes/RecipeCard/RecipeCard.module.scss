@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+.recipeCard {
+  width: 100%;
+  border-radius: $border-radius-sm;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: $border-radius-sm;
+    color: #fff;
+    text-decoration: none;
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    &:focus {
+      outline: $focus;
+      outline-offset: 1px;
+    }
+    &__category {
+      text-align: right;
+    }
+    &__details {
+      margin-top: 280px;
+      color: #fff;
+      margin-bottom: 5px;
+      &__title,
+      &__meta {
+        display: block;
+        width: 100%;
+      }
+      &__title {
+        font-family: $main-font-bold;
+        font-size: 30px;
+        margin-bottom: 9px;
+      }
+      &__meta {
+        svg {
+          width: 12px;
+          &:nth-child(2) {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+}
